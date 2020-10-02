@@ -38,3 +38,7 @@
         ```
     - You can find the key at this location --> .ssh/id_rsa.pub or at your specified location 
     - Append this key in .ssh/authorized_keys in your server
+- Install VLC
+    ```
+    sudo snap install vlc
+    ```
