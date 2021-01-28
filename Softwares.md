@@ -48,3 +48,34 @@
     sudo add-apt-repository ppa:obsproject/obs-studio
     sudo apt install obs-studio
     ```
+- Install OBS
+    ```
+    sudo apt install ffmpeg
+    sudo add-apt-repository ppa:obsproject/obs-studio
+    sudo apt install obs-studio
+    ```
+- Install docker [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
+    
+    -SET UP THE REPOSITORY
+    ```
+    sudo apt-get update
+    sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    sudo apt update
+    sudo apt install docker-ce
+    ```
+    -INSTALL DOCKER ENGINE
+    ```
+    sudo apt-get update
+    sudo apt-get install docker-ce docker-ce-cli containerd.io
+    ```
+    -Post-installation steps for Linux
+    ```
+    sudo usermod -aG docker $USER
+    ```
+    -Uninstall Docker Engine
+    ```
+    sudo apt-get purge docker-ce docker-ce-cli containerd.io
+    sudo rm -rf /var/lib/dockersudo rm -rf /var/lib/containerd
+    ```
